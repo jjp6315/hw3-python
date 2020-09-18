@@ -14,7 +14,7 @@ def digit_sum(n):
 def run():
   n = input("Enter an int: ")
   n = int (n)
-  print(f"sum of digits of a number is: {digit_sum(n)} ")
+  print(f"sum of digits of {n} is: {digit_sum(n)} ")
  
 
 if __name__ == "__main__":
