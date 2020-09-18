@@ -6,9 +6,9 @@ def digit_sum(n):
     return n
   else: 
      s = 0
-  while n:
-      s += n % 10
-      n //= 10
+  while n > 0:
+      s = s + (n % 10)
+      n = n // 10
   return s
 
 def run():
@@ -16,7 +16,6 @@ def run():
   n = int (n)
   print(f"sum of digits of a number is: {digit_sum(n)} ")
  
-
 
 if __name__ == "__main__":
   run()
