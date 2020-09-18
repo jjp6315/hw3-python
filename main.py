@@ -5,11 +5,11 @@ def digit_sum(n):
   if n == 0:
     return n
   else: 
-    n1 = n % 10
-    n2 = n // 10
-    n3 = n // 100
-    return n1 + n2
-  
+     s = 0
+  while n:
+      s += n % 10
+      n //= 10
+  return s
 
 def run():
   n = input("Enter an int: ")
